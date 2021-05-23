@@ -1,0 +1,22 @@
+{
+    "name": "rodrigorioo/twitch-clips-downloader",
+    "description": "Library for download clips from Twitch",
+    "version": "1.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rodrigo Rio",
+            "email": "rodrigo.rio@outlook.com.ar"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "TwitchClipDownloader": "src/"
+        }
+    }
+}
