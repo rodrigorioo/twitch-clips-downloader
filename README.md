@@ -9,7 +9,7 @@ Esta librería no utiliza la API de Twitch, pero igualmente se requiere el Clien
 La librería se instala vía composer
 
 ```sh
-composer install rodrigorioo/twitch-clips-downloader
+composer require rodrigorioo/twitch-clips-downloader
 ```
 
 ## Uso
