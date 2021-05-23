@@ -110,8 +110,8 @@ class Twitch {
             throw new Clip('URL don\'t specified');
         }
 
-        $filename = basename($this->getUrl());
-        $finalDirectory = ($directory != '') ? $directory.'/'.$filename : $filename;
+        $filename = $this->getId().'.mp4';
+        $finalDirectory = ($directory != '') ? realpath($directory).'/'.$filename : $filename;
 
         try {
             $filePutContents = file_put_contents($finalDirectory, file_get_contents($this->getUrl()));
