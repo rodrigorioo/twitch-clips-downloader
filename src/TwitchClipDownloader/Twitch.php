@@ -90,7 +90,8 @@ class Twitch {
         }
 
         try {
-            $url = $responseData->data->clip->videoQualities[0]->sourceURL;
+            $playBackAccessToken = $responseData->data->clip->playbackAccessToken;
+            $url = $responseData->data->clip->videoQualities[0]->sourceURL.'?sig='.$playBackAccessToken->signature.'&token='.urlencode($playBackAccessToken->value);
         } catch (\Exception $e) {
             throw new ParseResponse;
         }
